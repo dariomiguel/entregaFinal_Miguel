@@ -97,6 +97,7 @@ header li a:hover, .fa-brands:hover{
     padding-top: 0px;
 }
 
+
 /******************* Main **********************/
 
 main{
@@ -547,6 +548,18 @@ footer img{
         "ubic ubic . . .";
     }
 
+}
+
+/***************************************************************************************/
+/******************* PANTALLA 992px Elemento  Header de Bootstrap **********************/
+/***************************************************************************************/
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse { /* Este sector controla la ubicacion de los elementos del header*/
+        display: flex!important; 
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
 }
 
 /**********************************************************/
