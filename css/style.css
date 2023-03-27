@@ -355,7 +355,7 @@ padding-left: 0px;
 }
 
 .carrito{
-height: 480px;
+    height: calc(100vh - 75px - 100px);
 }
 
 .carrito p{
@@ -368,8 +368,6 @@ height: 480px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
-
 }
 
 img.imgcapy {
@@ -548,6 +546,10 @@ footer img{
         "ubic ubic . . .";
     }
 
+    .carrito{
+        height: calc(100vh - 75px - 80px);
+    }
+
 }
 
 /***************************************************************************************/
@@ -660,6 +662,10 @@ footer img{
         grid-template-rows: 1fr;
         grid-template-areas: 
         "anio anio ubic ubic . . . . . logoA logoB logoC";
+    }
+
+    .carrito{
+        height: calc(100vh - 70px - 80px);
     }
 
 }
