@@ -123,8 +123,7 @@ h2{
     font-size: 28px; 
     font-weight: 400;
     text-align: center;
-    margin-top: 25px;
-    padding:50px;
+    padding: 50px 20px 20px 20px;
 }
 
 article h2{
@@ -219,13 +218,16 @@ padding-left: 0px;
 /******************* Contacto **********************/
 
 .contactos{
-    padding: 50px;
+    padding: 25px;
     padding-top: 0px;
 }
 
+.contactos h2{
+    padding-bottom: 10px;
+}
 .contactos p{
     text-align: center; 
-    height: 200px;
+    margin: 30px 10px;
 }
 
 /*boton Bootstrap*/
@@ -256,18 +258,18 @@ padding-left: 0px;
 }
 
 .nos p{
-    height: 150px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: block;
 }
 
 .nos{
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 150px);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
     "A"
     "B"
@@ -482,37 +484,36 @@ footer img{
 
     .formContacto{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
     }
 
-    .contactos p{
-        text-align: center; 
-        height: 200px;
-        width: 40%;
+    .contenedorP, .contenedorFormulario{
+        flex: 1;
     }
 
-    .formularioMensaje{
+    .contactos p{
+        text-align: center; 
+    }
+
+    .formularioMensaje,  .contactos p{
         padding: 10px;
     }
 
     /******************* Nosotros **********************/
 
     .nos p{
-        height: 150px;
-        padding: 20px;
+        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .nos{
-        padding: 20px;
+        padding: 10px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 150px);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
         "A A ."
         ". B B"
@@ -577,8 +578,8 @@ footer img{
     }
 
     h2{
-        font-size: 48px; /*cambiar*/
-        text-align: center; /*/*/
+        font-size: 48px; 
+        text-align: center; 
     }
     /******************* Inicio **********************/
 
@@ -603,39 +604,33 @@ footer img{
 
     /******************* Contacto **********************/
 
-    .formContacto{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
     .contactos p{
         text-align: center; 
         height: 200px;
-        width: 60%;
+        width: 80%;
+        font-size: 22px;
+        margin: 0 auto;
     }
 
     /******************* Nosotros **********************/
 
     .nos p{
-        height: 150px;
-        padding: 20px;
+        padding: 10px 100px;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 22px;
     }
 
     .nos{
-        padding: 20px;
+        padding: 10px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 150px);
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
-        "A A ."
-        ". B B"
-        "C C .";
+        "A A A . ."
+        ". . B B B"
+        ". C C C .";
     }
 
     .parrafoA{
