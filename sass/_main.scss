@@ -1,0 +1,31 @@
+/******************* Main **********************/
+
+main{
+    background-color: #FFE45B;
+}
+
+h1{
+    color:#D9933D;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    padding-top: 40px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    line-height: 72px;
+    filter: blur(0.5px);
+    margin-bottom: 0px;
+}
+
+h2{
+    color:#D9933D;
+    text-decoration: underline;
+    font-size: 28px; 
+    font-weight: 400;
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+}
+
+article h2{
+    padding: 10px;
+}

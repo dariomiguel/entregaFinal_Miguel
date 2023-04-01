@@ -1,0 +1,73 @@
+/******************* Header **********************/
+
+header nav{
+    background-color: #d6e9f0;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header ul li{
+    display: inline-block; 
+}
+
+.logosHeader{
+    height: 60px;
+}
+
+.iconosHeader{
+    height: 25px;
+}
+
+header li a{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    color: #D9933D;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    margin: 6px 2px;
+    text-align: center;
+
+}
+
+.fa-brands{
+    padding: 0 5px;
+}
+
+header li a:hover, .fa-brands:hover{
+    color:#d6e9f0;
+    background-color: #D9933D;
+    border-radius:10px;    
+}
+
+/*Bootstrap header*/
+
+.btn-secondary, .dropdown-item, .navbar-light .navbar-nav .nav-link{
+    background-color:transparent ;
+    color: #D9933D;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+}
+.btn-secondary:hover ,.btn-secondary:active, .btn-secondary:focus, 
+.dropdown-item:hover,
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active,.navbar-light .navbar-nav .nav-link:focus
+{
+    color:#d6e9f0;
+    background-color: #D9933D;
+    border-radius:10px;    
+}
+.dropdown-menu, .navbar-collapse{
+    background-color:#d6e9f0;
+}
+.navbar{
+    padding-top: 0px;
+}
+.navbar-brand{
+    padding-top: 0px;
+}
+

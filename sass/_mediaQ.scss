@@ -1,0 +1,242 @@
+
+/*********************************************************/
+/******************* PANTALLA 600px **********************/
+/*********************************************************/
+
+@media (min-width: 600px){
+
+    /******************* Header **********************/
+
+    .logosHeader{
+        height: 75px; 
+    }
+
+    header li a{
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        padding-right: 25px;
+        padding-left: 0;
+    }
+
+    /******************* Main **********************/
+
+    h1{
+        font-size: 48px;
+    }
+
+    h2{
+        font-size: 32px; 
+        text-align: center; 
+    }
+    /******************* Inicio **********************/
+
+    .inicio p, .carrito p{
+        font-size:24px ;
+    }
+
+    /******************* Catalogos **********************/
+
+    #catalogos h2{
+        text-align: right;
+    }
+
+    .catalogo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalogo p{
+        height: 100px;
+        padding: 10px;
+    }
+
+    /******************* Contacto **********************/
+
+    #contacto h2{
+        text-align: left;
+    }
+
+    .formContacto{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .contenedorP, .contenedorFormulario{
+        flex: 1;
+    }
+
+    .contactos p{
+        text-align: center; 
+    }
+
+    .formularioMensaje,  .contactos p{
+        padding: 10px;
+    }
+
+    /******************* Nosotros **********************/
+
+    .nos p{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nos{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "A A ."
+        ". B B"
+        "C C .";
+    }
+
+    .parrafoA{
+        grid-area: A;
+    }
+    .parrafoB{
+        grid-area: B;
+    }
+    .parrafoC{
+        grid-area: C;
+    }
+    
+    /******************* Footer **********************/
+
+    footer{
+        height: 80px;
+    }
+        footer img{
+        height: 40px;
+    }
+
+    .contenedorFooter{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(2,40px);
+        grid-template-areas: 
+        "anio anio logoA logoB logoC"
+        "ubic ubic . . .";
+    }
+
+    .carrito{
+        height: calc(100vh - 75px - 80px);
+    }
+
+}
+
+/***************************************************************************************/
+/******************* PANTALLA 992px Elemento  Header de Bootstrap **********************/
+/***************************************************************************************/
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse { /* Este sector controla la ubicacion de los elementos del header*/
+        display: flex!important; 
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+
+/**********************************************************/
+/******************* PANTALLA 1024px **********************/
+/**********************************************************/
+
+@media (min-width: 1024px){
+
+    /******************* Main **********************/
+
+    h1{
+        font-size: 64px;
+    }
+
+    h2{
+        font-size: 48px; 
+        text-align: center; 
+    }
+    /******************* Inicio **********************/
+
+    .inicio p, .carrito p{
+        font-size:36px ;
+    }
+
+    /******************* Catalogos **********************/
+
+    .catalogo{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .catalogo p{
+        height: 300px;
+        padding: 10px;
+    }
+
+    img.imgcapy {
+        width: 210px;
+    }
+
+    /******************* Contacto **********************/
+
+    .contactos p{
+        text-align: center; 
+        height: 200px;
+        width: 80%;
+        font-size: 22px;
+        margin: 0 auto;
+    }
+
+    /******************* Nosotros **********************/
+
+    .nos p{
+        padding: 10px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+    }
+
+    .nos{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "A A A . ."
+        ". . B B B"
+        ". C C C .";
+    }
+
+    .parrafoA{
+        grid-area: A;
+    }
+    .parrafoB{
+        grid-area: B;
+    }
+    .parrafoC{
+        grid-area: C;
+    }
+    
+    /******************* Footer **********************/
+
+    footer{
+        height: 70px;
+    }
+        footer img{
+        height: 40px;
+    }
+
+    .contenedorFooter{
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "anio anio ubic ubic . . . . . logoA logoB logoC";
+    }
+
+    .carrito{
+        height: calc(100vh - 70px - 80px);
+    }
+
+}

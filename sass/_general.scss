@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a, li {
+    text-decoration: none;
+    list-style-type: none;    
+}
+
+.dropdown-menu {
+    border: none; 
+}
+
+p {
+    margin-bottom: 0px;
+}
