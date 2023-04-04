@@ -1,0 +1,22 @@
+$colorPrimario: #d6e9f0;
+$colorSecundario: #D9933D;
+$colorSecundarioDark: #b37a34; 
+$bgColor: #ffeb85;
+$bgColorB: #FFE45B;
+$bgColorBoton: #ffaf4d;
+$gris: #716262;
+
+@mixin propiedadBotones{
+    background-color:transparent ;
+    color: $colorSecundario;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+}
+
+@mixin propiedadBotonesH{
+    color:$colorPrimario;
+    background-color:$colorSecundario;
+    border-radius: 10px;
+}

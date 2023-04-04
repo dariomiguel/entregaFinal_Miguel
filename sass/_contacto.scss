@@ -3,34 +3,31 @@
 .contactos{
     padding: 25px;
     padding-top: 0px;
-}
-
-.contactos h2{
-    padding-bottom: 10px;
-}
-.contactos p{
-    text-align: center; 
-    margin: 30px 10px;
-}
-
-/*boton Bootstrap*/
-
-.btn-primary {
-    color: #fff;
-    background-color: #D9933D;
-    border-color: #D9933D;
-}
-.btn-primary:hover , .btn-primary:active{
-    color: #fff;
-    background-color: #b37a34;
-    border-color: #D9933D;
-}
-.btn-check:focus+.btn-primary, .btn-primary:focus {
-    color: #fff;
-    background-color: #b37a34;
-    border-color: #b37a34;
-    box-shadow: 0 0 0 .25rem #ffaf4d;
-}
-.btn-primary:active:focus{
-    box-shadow: #ffaf4d 0px 0px 0px 0.25rem;
+    h2{
+        padding-bottom: 10px;
+    }
+    p{
+        text-align: center; 
+        margin: 30px 10px;
+    }
+    /*boton Bootstrap*/
+    .btn-primary {
+        color: $colorPrimario;
+        background-color: $colorSecundario;
+        border-color: $colorSecundario;
+        &:hover, &:active{
+            color: $colorPrimario;
+            background-color: $colorSecundarioDark;
+            border-color: $colorSecundario;
+        }
+            &:active:focus{
+            box-shadow: $bgColorBoton 0px 0px 0px 0.25rem;
+        }
+    }
+    .btn-check:focus+.btn-primary, .btn-primary:focus {
+        color: $colorPrimario;
+        background-color: $colorSecundarioDark;
+        border-color: $colorSecundario;
+        box-shadow: 0 0 0 .25rem $bgColorBoton;
+    }
 }

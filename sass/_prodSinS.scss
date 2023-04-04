@@ -1,0 +1,34 @@
+/************* Producto Sin Stock **************/
+
+main{
+    .prodSinS{
+        min-height: calc(100vh - 75px - 80px);
+        overflow: hidden;
+        white-space: normal;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: $bgColorB;
+        align-items: center;
+        h1 {
+            font-size: 26px;
+            padding: 0px 10px;
+        }
+        .contenedorImgP{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            p{
+                text-align: center;
+                padding: 10px;
+                display: block;
+            }
+            img {
+                width: 50%;
+                display: block;
+            }
+        }   
+    }
+}

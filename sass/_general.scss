@@ -5,16 +5,19 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
 a, li {
     text-decoration: none;
-    list-style-type: none;    
+    list-style-type: none;
+    &:hover{
+        color: $colorSecundarioDark;
+    }
 }
-
+a{
+    color:$colorSecundario;
+}
 .dropdown-menu {
     border: none; 
 }
-
 p {
     margin-bottom: 0px;
 }

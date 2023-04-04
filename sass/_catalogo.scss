@@ -1,46 +1,36 @@
 /******************* Catalogos **********************/
+
 #catalogos{
-    background-color: #ffeb85;
-
-}
-
-.catalogo {
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 4fr;
-grid-gap: 10px;
-justify-items: center;
-align-items: end;
-} 
-
-#catalogos ul{
-padding-left: 0px; 
-}
-
-.catalogo ul li img{
-height: 200px;
-}
-
-.catalogo ul li{
-padding: 10px;
-}
-
-.catalogo p{
-height: 100px;
-padding: 10px;
-}
-
-.contenedor{
-display: inline-block;
-width: 200px;
-text-align: center;
-color:#D9933D;
-font-weight: bolder;
-text-decoration: underline;
-}
-
-.contenedor img {
-max-width: 100%;
-max-height: 100%;
-vertical-align: middle;
+    background-color: $bgColor;
+    .catalogo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        grid-gap: 10px;
+        justify-items: center;
+        align-items: end;
+        .contenedor{
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            color:$colorSecundario;
+            font-weight: bolder;
+            text-decoration: underline;
+            border:1px solid black;
+            border-radius: 15px;
+            background-color: $colorPrimario;
+            img{
+                height: 200px;
+                max-width: 100%;
+                max-height: 100%;
+                vertical-align: middle;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+            p{
+                height: 75px;
+                padding: 15px;
+            }
+        }
+    } 
 }

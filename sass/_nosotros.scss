@@ -1,34 +1,29 @@
 /******************* Nosotros **********************/
 
 #nosotros{
-    background-color: #ffeb85;
-}
-
-.nos p{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: block;
-}
-
-.nos{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-    "A"
-    "B"
-    "C";
-}
-
-.parrafoA{
-    grid-area: A;
-}
-.parrafoB{
-    grid-area: B;
-}
-.parrafoC{
-    grid-area: C;
+    .nos{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "A"
+        "B"
+        "C";
+        p{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .parrafoA{
+            grid-area: A;
+        }
+        .parrafoB{
+            grid-area: B;
+        }
+        .parrafoC{
+            grid-area: C;
+        }
+    }
 }

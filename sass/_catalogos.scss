@@ -1,91 +1,38 @@
+/******************* Catalogos HTML **********************/
 
-/******************* Catalogos **********************/
-
-
-.catFormato h1{
-    padding-top: 40px;
-}
-
-.catFormato nav{
-    margin: 50px 50px 0px 50px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.catFormato article{
-    height: 350px;
-    width: 260px;
-    border: 5px solid #b37a34;
-    background-color: #d6e9f0;
-    border-radius: 15px;
-}
-
-.catFormato article{
-    margin: 20px;
-}
-
-.catFormato img{
-    height: 200px;
-    width: 200px;
-    margin: 25px
-}
-
-.catFormato h2{
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    text-align: center;
-    margin-left: 0px;
-    margin-top: 0PX;
-}
-
-.prodFormato{
-    padding-left: 50px;
-}
-
-.prodFormato article{
-    padding-top: 50px;
-}
-
-.prodFormato img{
-    height: 500px;
-    padding-left: 25%;
-}
-
-.prodFormato h2{
-    padding-left: 50px;
-}
-
-.prodFormato ul li{
-    display: list-item;
-    margin: 20px
-    ;
-}
-
-.prodFormato p{
-    padding:20px 200px 200px 20px;
-}
-
-.carrito{
-    height: calc(100vh - 75px - 100px);
-}
-
-.carrito p{
-    text-align: center;
-    padding: 10px;
-}
-
-.contenedorCarrito{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-img.imgcapy {
-    width: 150px;
-
+.catFormato{
+    min-height: calc(100vh - 80px - 80px);
+    section{
+        h1{
+            padding-top: 40px;
+        }
+        nav{
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            article{
+                height: 350px;
+                width: 260px;
+                border: 5px solid $colorSecundarioDark;
+                background-color: $colorPrimario;
+                border-radius: 15px;
+                margin: 20px;
+                img{
+                    height: 200px;
+                    width: 200px;
+                    margin: 25px;
+                }
+                h2{
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    text-align: center;
+                    margin: 0px;
+                    padding: 20px;
+                }
+            }
+        }
+    }
 }

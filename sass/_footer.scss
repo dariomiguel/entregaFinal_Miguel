@@ -1,45 +1,41 @@
 /******************* Footer **********************/
 
 footer{
-    background-color: #d6e9f0;
+    background-color: $colorPrimario;
     height: 100px;
     margin: 0;
+    p{
+        color: $gris;
+        text-align: center;
+    }
+    img{
+        height: 30px;
+    }
+    .contenedorFooter{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,30px);
+        grid-template-areas: 
+            "anio anio anio"
+            "ubic ubic ubic"
+            "logoA logoB logoC";
+    }
+    .anio{
+        grid-area: anio;
+    }
+    .ubic{
+        grid-area: ubic;
+    }
+    .logoA{
+        grid-area: logoA;
+    }
+    .logoB{
+        grid-area: logoB;
+    }
+    .logoC{
+        grid-area: logoC;
+    }
 }
 
-footer p{
-    color: #716262;
-    text-align: center;
-}
-
-footer img{
-    height: 30px;
-}
-
-.contenedorFooter{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,30px);
-    grid-template-areas: 
-    "anio anio anio"
-    "ubic ubic ubic"
-    "logoA logoB logoC";
-
-}
-
-.anio{
-    grid-area: anio;
-}
-.ubic{
-    grid-area: ubic;
-}
-.logoA{
-    grid-area: logoA;
-}
-.logoB{
-    grid-area: logoB;
-}
-.logoC{
-    grid-area: logoC;
-}
