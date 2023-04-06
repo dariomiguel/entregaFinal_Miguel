@@ -183,12 +183,19 @@ main h2 {
   display: inline-block;
   width: 200px;
   text-align: center;
+  background-color: #d6e9f0;
   color: #D9933D;
   font-weight: bolder;
   text-decoration: underline;
   border: 1px solid black;
   border-radius: 15px;
-  background-color: #d6e9f0;
+}
+#catalogos .catalogo .contenedor:hover {
+  transform: scale(1.25);
+  transition: transform 300ms ease-out;
+}
+#catalogos .catalogo .contenedor:not(:hover) {
+  filter: blur(2px);
 }
 #catalogos .catalogo .contenedor img {
   height: 200px;
