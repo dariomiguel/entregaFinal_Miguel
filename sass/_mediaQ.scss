@@ -45,6 +45,11 @@
                 height: 100px;
                 padding: 10px;
             }
+            .contenedor{
+                &:not(:hover) {
+                    filter: blur(2px);
+                    }
+            }
         }
     }
     /****************Producto sin Stock**************/

@@ -194,9 +194,6 @@ main h2 {
   transform: scale(1.25);
   transition: transform 300ms ease-out;
 }
-#catalogos .catalogo .contenedor:not(:hover) {
-  filter: blur(2px);
-}
 #catalogos .catalogo .contenedor img {
   height: 200px;
   max-width: 100%;
@@ -409,6 +406,9 @@ footer .logoC {
   #catalogos .catalogo p {
     height: 100px;
     padding: 10px;
+  }
+  #catalogos .catalogo .contenedor:not(:hover) {
+    filter: blur(2px);
   }
   /****************Producto sin Stock**************/
   main .prodSinS {
