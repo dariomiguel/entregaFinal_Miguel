@@ -168,14 +168,14 @@ main h2 {
 }
 
 /******************* Catalogos **********************/
-#catalogos {
-  background-color: #ffeb85;
+#catalogos h2 {
+  padding-bottom: 45px;
 }
 #catalogos .catalogo {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 4fr;
-  grid-gap: 10px;
+  grid-gap: 50px;
   justify-items: center;
   align-items: end;
 }
@@ -313,7 +313,7 @@ main .prodSinS .contenedorImgP img {
 
 /******************* Nosotros **********************/
 #nosotros .nos {
-  padding: 20px;
+  padding: 50px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -451,7 +451,6 @@ footer .logoC {
   }
   /******************* Nosotros **********************/
   #nosotros .nos {
-    padding: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -552,7 +551,6 @@ footer .logoC {
   }
   /******************* Nosotros **********************/
   #nosotros .nos {
-    padding: 10px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);

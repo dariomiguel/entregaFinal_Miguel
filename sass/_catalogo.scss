@@ -1,12 +1,14 @@
 /******************* Catalogos **********************/
 
 #catalogos{
-    background-color: $bgColor;
+    h2{
+        padding-bottom: 45px;
+    }
     .catalogo{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 4fr;
-        grid-gap: 10px;
+        grid-gap: 50px;
         justify-items: center;
         align-items: end;
         .contenedor{
